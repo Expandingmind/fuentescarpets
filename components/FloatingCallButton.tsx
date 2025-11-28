@@ -7,7 +7,6 @@ export default function FloatingCallButton() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // Show button after scrolling down 300px
       if (window.pageYOffset > 300) {
         setIsVisible(true)
       } else {
@@ -21,7 +20,6 @@ export default function FloatingCallButton() {
 
   return (
     <>
-      {/* Mobile Only - Bottom Right */}
       <a
         href="tel:+13053236368"
         className={`fixed bottom-6 right-6 z-50 lg:hidden w-16 h-16 bg-primary hover:bg-primary-dark text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 ${
@@ -46,4 +44,3 @@ export default function FloatingCallButton() {
     </>
   )
 }
-

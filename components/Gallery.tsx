@@ -45,7 +45,6 @@ export default function Gallery() {
   return (
     <section id="gallery" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Recent Flooring Projects
@@ -56,14 +55,12 @@ export default function Gallery() {
           </p>
         </div>
 
-        {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((project, index) => (
             <div
               key={index}
               className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
             >
-              {/* Project Image */}
               <div className="aspect-square overflow-hidden">
                 <img
                   src={project.image}
@@ -72,7 +69,6 @@ export default function Gallery() {
                 />
               </div>
 
-              {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div className="p-6 text-white w-full">
                   <h3 className="text-lg font-bold mb-1">{project.title}</h3>
@@ -83,7 +79,6 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* View More Button */}
         <div className="text-center mt-12">
           <button
             onClick={() => {
@@ -99,4 +94,3 @@ export default function Gallery() {
     </section>
   )
 }
-

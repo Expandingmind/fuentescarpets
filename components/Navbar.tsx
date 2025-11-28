@@ -45,7 +45,6 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <button
             onClick={() => scrollToSection('home')}
             className="flex flex-col leading-tight hover:opacity-80 transition-opacity"
@@ -56,7 +55,6 @@ export default function Navbar() {
             </span>
           </button>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <button
@@ -75,7 +73,6 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100 transition-colors"
@@ -100,7 +97,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white border-t shadow-lg">
           <div className="px-4 py-4 space-y-3">
@@ -125,4 +121,3 @@ export default function Navbar() {
     </nav>
   )
 }
-

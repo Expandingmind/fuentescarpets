@@ -77,7 +77,6 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="mb-4">
               <h3 className="text-2xl font-bold mb-2">Fuentes</h3>
@@ -90,11 +89,10 @@ export default function Footer() {
               exceptional service.
             </p>
             <p className="text-sm text-primary font-semibold">
-              Licensed & Insured • Se habla Español
+              Licensed & Insured | Se habla Espanol
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -116,7 +114,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h4 className="text-lg font-bold mb-4">Contact</h4>
             <ul className="space-y-3 text-gray-400">
@@ -140,7 +137,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Social Links */}
         <div className="border-t border-gray-800 pt-8 mb-8">
           <div className="flex flex-wrap justify-center gap-4">
             {socialLinks.map((social) => (
@@ -158,7 +154,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
           <p>&copy; 2025 Fuentes Carpet Installation Corp. All rights reserved.</p>
         </div>
@@ -166,4 +161,3 @@ export default function Footer() {
     </footer>
   )
 }
-

@@ -10,7 +10,6 @@ export default function SpecialOffer() {
 
   return (
     <section id="special-offer" className="relative py-20 overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0 bg-primary">
         <div className="absolute inset-0 opacity-10">
           <img
@@ -23,26 +22,22 @@ export default function SpecialOffer() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          {/* Badge */}
           <div className="inline-block mb-6">
             <span className="bg-white/20 text-white px-6 py-2 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm border border-white/30">
               LIMITED TIME OFFER
             </span>
           </div>
 
-          {/* Heading */}
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             3-Room Carpet Installation Special
           </h2>
 
-          {/* Description */}
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Get professional carpet installation with premium padding for up to 3 rooms at
             a competitive flat rate (covers up to 40 square yards). Perfect for refreshing
-            your home's main living spaces.
+            your home main living spaces.
           </p>
 
-          {/* Features */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-10 text-white">
             <div className="flex items-center">
               <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -64,7 +59,6 @@ export default function SpecialOffer() {
             </div>
           </div>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={scrollToContact}
@@ -84,4 +78,3 @@ export default function SpecialOffer() {
     </section>
   )
 }
-

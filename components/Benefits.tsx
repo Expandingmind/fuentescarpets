@@ -31,7 +31,6 @@ export default function Benefits() {
     <section id="benefits" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Image */}
           <div className="order-2 lg:order-1">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
@@ -42,19 +41,17 @@ export default function Benefits() {
             </div>
           </div>
 
-          {/* Right - Content */}
           <div className="order-1 lg:order-2">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Why Upgrade Your Floors with Fuentes?
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Upgrading your flooring is more than just aesthetics—it's about protecting
+              Upgrading your flooring is more than just aesthetics. It is about protecting
               your investment, refreshing your home, improving comfort, and increasing
-              property value. Here's why homeowners across Miami trust Fuentes for their
+              property value. Here is why homeowners across Miami trust Fuentes for their
               flooring needs:
             </p>
 
-            {/* Benefits List */}
             <div className="space-y-6 mb-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start">
@@ -77,7 +74,6 @@ export default function Benefits() {
               ))}
             </div>
 
-            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToContact}
@@ -98,4 +94,3 @@ export default function Benefits() {
     </section>
   )
 }
-

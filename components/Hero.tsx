@@ -18,7 +18,6 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=2400"
@@ -28,7 +27,6 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
       </div>
 
-      {/* Social Icons - Left Side (Desktop) */}
       <div className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 z-20 flex-col space-y-4">
         <a
           href="https://google.com"
@@ -65,17 +63,14 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center md:text-left">
         <div className="max-w-3xl">
-          {/* Label */}
           <div className="inline-block mb-4">
             <span className="bg-primary/20 text-white px-4 py-2 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm border border-white/20">
               SERVING MIAMI & SOUTH FLORIDA
             </span>
           </div>
 
-          {/* Phone Number - Mobile */}
           <div className="md:hidden mb-4">
             <a
               href="tel:+13053236368"
@@ -85,19 +80,16 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Premium Carpet & Flooring Installation in Miami
           </h1>
 
-          {/* Supporting Text */}
           <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
             Transform your space with expertly installed flooring that combines style and durability.
             Our family-owned business delivers professional craftsmanship and a positive contracting
             experience, capturing exactly what you need for your home or business.
           </p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
               onClick={scrollToContact}
@@ -113,7 +105,6 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Phone Number - Desktop */}
           <div className="hidden md:block mt-8">
             <a
               href="tel:+13053236368"
@@ -128,7 +119,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -137,4 +127,3 @@ export default function Hero() {
     </section>
   )
 }
-

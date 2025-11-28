@@ -24,7 +24,6 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Basic validation
     if (!formData.name || !formData.email || !formData.phone) {
       setSubmitMessage('Please fill in all required fields.')
       setIsSubmitting(false)
@@ -32,13 +31,11 @@ export default function Contact() {
       return
     }
 
-    // For now, just log to console (no backend integration)
     console.log('Form submitted:', formData)
     
     setSubmitMessage('Thank you! We will contact you soon.')
     setIsSubmitting(false)
     
-    // Reset form
     setFormData({
       name: '',
       email: '',
@@ -53,7 +50,6 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Ready to Upgrade Your Floors?
@@ -65,13 +61,11 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Get in Touch
             </h3>
 
-            {/* Contact Details */}
             <div className="space-y-6 mb-8">
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
@@ -125,23 +119,21 @@ export default function Contact() {
                 <div className="ml-4">
                   <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Hours</p>
                   <p className="text-xl font-bold text-gray-900">
-                    Sunday–Saturday
+                    Sunday to Saturday
                   </p>
-                  <p className="text-gray-600">08:00 AM – 08:00 PM</p>
+                  <p className="text-gray-600">08:00 AM to 08:00 PM</p>
                 </div>
               </div>
             </div>
 
-            {/* Spanish Note */}
             <div className="bg-primary/5 border-l-4 border-primary rounded-lg p-6">
-              <p className="text-primary font-bold text-lg">Se habla Español</p>
+              <p className="text-primary font-bold text-lg">Se habla Espanol</p>
               <p className="text-gray-600 mt-2">
-                Ofrecemos servicio en español para su comodidad.
+                Ofrecemos servicio en espanol para su comodidad.
               </p>
             </div>
           </div>
 
-          {/* Contact Form */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Request a Free Estimate
@@ -251,4 +243,3 @@ export default function Contact() {
     </section>
   )
 }
-
