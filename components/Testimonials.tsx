@@ -29,26 +29,22 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             What Our Customers Are Saying
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Don\'t just take our word for it—see why homeowners across Miami and South Florida
-            trust Fuentes for their flooring projects. We\'re proud of our 5-star reviews and
-            word-of-mouth reputation.
+            See why homeowners across Miami and South Florida trust Fuentes for their 
+            flooring projects. We are proud of our 5-star reviews and word-of-mouth reputation.
           </p>
         </div>
 
-        {/* Testimonials Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
               className="bg-gray-50 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300"
             >
-              {/* Stars */}
               <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <svg
@@ -61,12 +57,10 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              {/* Testimonial Text */}
               <p className="text-gray-700 mb-6 leading-relaxed italic">
-                "{testimonial.text}"
+                &quot;{testimonial.text}&quot;
               </p>
 
-              {/* Customer Info */}
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-bold text-gray-900">{testimonial.name}</p>
                 <p className="text-sm text-gray-600">{testimonial.location}</p>
@@ -75,7 +69,6 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Trust Badges */}
         <div className="flex flex-wrap justify-center items-center gap-8">
           <p className="text-gray-600 font-semibold w-full text-center mb-4">
             Trusted on:
@@ -93,4 +86,3 @@ export default function Testimonials() {
     </section>
   )
 }
-

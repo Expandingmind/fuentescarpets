@@ -24,7 +24,7 @@ export default function Services() {
     },
     {
       title: 'Stair Carpet & Runners',
-      description: 'Custom stair carpeting to add safety and style. Beautiful runners that protect stairs while enhancing your home\'s look.',
+      description: 'Custom stair carpeting to add safety and style. Beautiful runners that protect stairs while enhancing your home look.',
       image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800',
     },
     {
@@ -44,7 +44,6 @@ export default function Services() {
   return (
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Exceptional Flooring Services in Miami, Tailored for You
@@ -55,14 +54,12 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
               className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
-              {/* Service Image */}
               <div className="relative h-56 overflow-hidden">
                 <img
                   src={service.image}
@@ -72,7 +69,6 @@ export default function Services() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               </div>
 
-              {/* Service Content */}
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   {service.title}
@@ -102,4 +98,3 @@ export default function Services() {
     </section>
   )
 }
-
