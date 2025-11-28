@@ -35,8 +35,8 @@ export default function Testimonials() {
             What Our Customers Are Saying
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it—see why homeowners across Miami and South Florida
-            trust Fuentes for their flooring projects. We're proud of our 5-star reviews and
+            Don\'t just take our word for it—see why homeowners across Miami and South Florida
+            trust Fuentes for their flooring projects. We\'re proud of our 5-star reviews and
             word-of-mouth reputation.
           </p>
         </div>

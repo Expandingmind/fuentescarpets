@@ -24,7 +24,7 @@ export default function Services() {
     },
     {
       title: 'Stair Carpet & Runners',
-      description: 'Custom stair carpeting to add safety and style. Beautiful runners that protect stairs while enhancing your home's look.',
+      description: 'Custom stair carpeting to add safety and style. Beautiful runners that protect stairs while enhancing your home\'s look.',
       image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800',
     },
     {

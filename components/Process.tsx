@@ -31,7 +31,7 @@ export default function Process() {
             Our Simple Installation Process
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            As a family-owned business, we're committed to craftsmanship and transparency.
+            As a family-owned business, we\'re committed to craftsmanship and transparency.
             Our licensed and insured team follows a proven process to ensure your complete
             satisfaction from start to finish.
           </p>
