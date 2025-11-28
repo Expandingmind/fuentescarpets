@@ -5,14 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Fuentes Carpet Installation Corp | Carpet & Flooring Installation in Miami, FL',
-  description: 'Family-owned flooring contractor in Miami, FL specializing in carpet, hardwood, and laminate installation. 25+ years experience, licensed & insured, 7-day availability, free estimates. Se habla Español.',
-  keywords: 'carpet installation Miami, flooring Miami, hardwood flooring, laminate installation, South Florida flooring contractor',
-  openGraph: {
-    title: 'Fuentes Carpet Installation Corp | Carpet & Flooring Installation in Miami, FL',
-    description: 'Professional flooring installation services in Miami and South Florida',
-    type: 'website',
-  },
+  title: 'Fuentes Carpet Installation Corp | Miami FL Flooring',
+  description: 'Professional carpet, hardwood, and laminate installation in Miami. 25+ years experience. Licensed and insured. Free estimates. Call (305) 323-6368',
 }
 
 export default function RootLayout({
