@@ -25,7 +25,7 @@ export default function Benefits() {
 
           {/* Right Column: Text Content */}
           <div className="order-1 lg:order-2">
-            <div className="inline-block w-12 h-1 bg-[#84cc16] mb-6 rounded-full"></div>
+            <div className="inline-block w-12 h-1 bg-primary mb-6 rounded-full"></div>
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-8 leading-tight">
               Why Choose Fuentes?
             </h2>
@@ -49,7 +49,7 @@ export default function Benefits() {
               {/* Point 1: Experience */}
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-6 h-6 rounded-full bg-[#84cc16] flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -66,7 +66,7 @@ export default function Benefits() {
               {/* Point 2: Availability */}
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-6 h-6 rounded-full bg-[#84cc16] flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -83,7 +83,7 @@ export default function Benefits() {
               {/* Point 3: Quality */}
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-6 h-6 rounded-full bg-[#84cc16] flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -102,7 +102,7 @@ export default function Benefits() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={scrollToContact}
-                className="bg-[#84cc16] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#65a30d] transition-all shadow-lg flex items-center justify-center group"
+                className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all shadow-lg flex items-center justify-center group"
               >
                 Contact Us
                 <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

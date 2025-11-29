@@ -30,8 +30,8 @@ export default function Process() {
               {/* Point 1 */}
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                    <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                    <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -48,8 +48,8 @@ export default function Process() {
               {/* Point 2 */}
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                    <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                    <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -66,8 +66,8 @@ export default function Process() {
               {/* Point 3 */}
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                    <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                    <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -86,7 +86,7 @@ export default function Process() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={scrollToContact}
-                className="bg-[#84cc16] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#65a30d] transition-all shadow-lg flex items-center justify-center group"
+                className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all shadow-lg flex items-center justify-center group"
               >
                 Contact Us
                 <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
