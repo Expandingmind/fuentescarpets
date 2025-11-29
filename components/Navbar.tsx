@@ -1,10 +1,14 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isHomePage = pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,15 +18,23 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      const offset = 80
-      const elementPosition = element.offsetTop - offset
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      })
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    // If we are on the homepage, prevent default link behavior and scroll
+    if (isHomePage) {
+      e.preventDefault()
+      const element = document.getElementById(id)
+      if (element) {
+        const offset = 80
+        const elementPosition = element.offsetTop - offset
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
+        })
+        setIsMobileMenuOpen(false)
+      }
+    }
+    // If not on homepage, the Link component will handle navigation to /#id
+    else {
       setIsMobileMenuOpen(false)
     }
   }
@@ -39,16 +51,21 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <button onClick={() => scrollToSection('home')} className="flex flex-col leading-tight hover:opacity-80 transition-opacity">
+          <Link href="/" className="flex flex-col leading-tight hover:opacity-80 transition-opacity">
             <span className="text-2xl font-bold text-primary">Fuentes</span>
             <span className="text-xs font-semibold text-gray-600 -mt-1">Carpet Installation Corp</span>
-          </button>
+          </Link>
 
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <button key={link.id} onClick={() => scrollToSection(link.id)} className="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">
+              <Link
+                key={link.id}
+                href={`/#${link.id}`}
+                onClick={(e) => handleNavClick(e, link.id)}
+                className="text-gray-700 hover:text-primary transition-colors duration-200 font-medium"
+              >
                 {link.label}
-              </button>
+              </Link>
             ))}
             <a href="tel:+13053236368" className="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-dark transition-all duration-200 shadow-md hover:shadow-lg">
               Get Free Estimate
@@ -67,9 +84,14 @@ export default function Navbar() {
         <div className="lg:hidden bg-white border-t shadow-lg">
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
-              <button key={link.id} onClick={() => scrollToSection(link.id)} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary rounded-md transition-colors font-medium">
+              <Link
+                key={link.id}
+                href={`/#${link.id}`}
+                onClick={(e) => handleNavClick(e, link.id)}
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary rounded-md transition-colors font-medium"
+              >
                 {link.label}
-              </button>
+              </Link>
             ))}
             <a href="tel:+13053236368" className="block w-full text-center bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-dark transition-all duration-200">
               Get Free Estimate
