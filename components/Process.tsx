@@ -110,9 +110,9 @@ export default function Process() {
             <div className="absolute inset-0 bg-gray-100 rounded-[3rem] transform rotate-3"></div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-              src="https://images.unsplash.com/photo-1617104551722-3b56b1f77843?q=80&w=1200" 
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200" 
               alt="Professional flooring installation process" 
-              className="relative w-full h-full object-cover rounded-[3rem] shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 bg-gray-200"
+              className="relative w-full h-full object-cover rounded-[3rem] shadow-2xl bg-gray-200"
             />
           </div>
         </div>
