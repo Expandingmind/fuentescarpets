@@ -4,11 +4,27 @@ import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { Metadata } from 'next'
 
 export async function generateStaticParams() {
   return services.map((service) => ({
     slug: service.id,
   }))
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const service = services.find((s) => s.id === params.slug)
+  
+  if (!service) {
+    return {
+      title: 'Service Not Found',
+    }
+  }
+
+  return {
+    title: `${service.title} | Fuentes Carpet Installation`,
+    description: service.description,
+  }
 }
 
 export default function ServicePage({ params }: { params: { slug: string } }) {
@@ -105,4 +121,3 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     </>
   )
 }
-
