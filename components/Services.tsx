@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { services } from '@/data/services'
 
 export default function Services() {
@@ -32,7 +31,7 @@ export default function Services() {
                 <p className="text-gray-600 mb-4 leading-relaxed">
                   {service.description}
                 </p>
-                <Link 
+                <a 
                   href={`/services/${service.id}`}
                   className="text-primary font-semibold hover:text-primary-dark transition-colors inline-flex items-center group/btn"
                 >
