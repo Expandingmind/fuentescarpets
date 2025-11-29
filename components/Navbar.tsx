@@ -31,6 +31,7 @@ export default function Navbar() {
     { label: 'Home', id: 'home' },
     { label: 'About', id: 'benefits' },
     { label: 'Services', id: 'services' },
+    { label: 'Reviews', id: 'testimonials' },
     { label: 'Contact', id: 'contact' },
   ]
 
