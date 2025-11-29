@@ -31,6 +31,7 @@ export default function Services() {
                 <p className="text-gray-600 mb-4 leading-relaxed">
                   {service.description}
                 </p>
+                {/* Link to service details */}
                 <a 
                   href={`/services/${service.id}`}
                   className="text-primary font-semibold hover:text-primary-dark transition-colors inline-flex items-center group/btn"
