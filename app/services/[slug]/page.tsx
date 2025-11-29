@@ -37,33 +37,34 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     <>
       <Navbar />
       <main className="pt-20">
-        {/* 1. HERO SECTION - Centered, High Impact */}
-        <div className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
+        {/* 1. HERO SECTION */}
+        <div className="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-900">
           <div className="absolute inset-0 z-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={service.image}
               alt={service.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-60"
             />
-            <div className="absolute inset-0 bg-black/70"></div>
+            <div className="absolute inset-0 bg-black/50"></div>
           </div>
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase leading-tight">
+            <h1 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase leading-tight drop-shadow-lg">
               {service.title}
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 mb-10 font-medium">
+            <p className="text-xl md:text-2xl text-gray-100 mb-10 font-medium drop-shadow-md">
               {service.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/#contact"
-                className="bg-red-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-red-700 transition-all uppercase tracking-wide"
+                className="bg-red-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-red-700 transition-all uppercase tracking-wide shadow-lg"
               >
                 Get Free Estimate
               </a>
               <a
                 href="tel:+13053236368"
-                className="bg-primary text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-primary-dark transition-all uppercase tracking-wide"
+                className="bg-primary text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-primary-dark transition-all uppercase tracking-wide shadow-lg"
               >
                 Call (305) 323-6368
               </a>
@@ -71,11 +72,11 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
 
-        {/* 2. WHY IT MATTERS - Split Layout */}
+        {/* 2. WHY IT MATTERS */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
-              {/* Left Column: Problem/Solution */}
+              {/* Left Column */}
               <div>
                 <h2 className="text-4xl font-black text-black mb-8 uppercase">
                   WHY {service.title.split(' ')[0]} MATTERS
@@ -104,7 +105,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               </div>
 
               {/* Right Column: Image */}
-              <div className="relative h-full min-h-[400px] border-8 border-gray-100 shadow-2xl">
+              <div className="relative h-full min-h-[400px] border-8 border-gray-100 shadow-2xl bg-gray-200">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={service.image}
                   alt={`${service.title} illustration`}
@@ -124,7 +126,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             
             <div className="space-y-4">
               {service.faqs?.map((faq, index) => (
-                <div key={index} className="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <div key={index} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
                   <details className="group">
                     <summary className="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-lg text-gray-900 group-open:bg-gray-50 transition-colors">
                       <span>{faq.question}</span>
