@@ -36,7 +36,7 @@ export default function Services() {
                   href={`/services/${service.id}`}
                   className="text-primary font-semibold hover:text-primary-dark transition-colors inline-flex items-center group/btn"
                 >
-                  Learn More
+                  View Details
                   <svg className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
