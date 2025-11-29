@@ -1,148 +1,81 @@
 export const services = [
   {
     id: 'carpet-installation',
-    title: 'Carpet Installation',
-    description: 'Cozy, soft, and noise-reducing carpet for bedrooms, living rooms, and stairs. Perfect for creating warm, comfortable spaces.',
-    fullDescription: `
-      Transform your home with our professional carpet installation services. We offer a wide range of carpet styles, textures, and colors to match your unique taste and lifestyle.
-      
-      Our installation process includes:
-      • Precise measurement and material estimation
-      • Removal and disposal of old flooring
-      • Subfloor preparation for a smooth finish
-      • Professional installation of premium padding
-      • Expert carpet fitting, stretching, and seaming
-      • Final walkthrough to ensure complete satisfaction
-      
-      Whether you're looking for plush carpet for your bedroom, durable berber for high-traffic areas, or patterned styles for a statement look, we have the expertise to install it perfectly.
-    `,
-    features: [
-      'Wide selection of styles & colors',
-      'Premium padding included',
-      'Stain-resistant options available',
-      'Noise reduction & insulation',
-      'Kid & pet-friendly choices'
+    title: 'Carpet Installation Services in Miami',
+    description: 'Cozy, soft, and noise-reducing carpet for bedrooms, living rooms, and stairs.',
+    problem: 'Old, worn-out carpet can trap allergens, look unsightly with stains that won\'t come out, and make your home feel dated and dirty. Trying to install it yourself often leads to wrinkles, visible seams, and wasted material.',
+    solution: 'Our professional carpet installation eliminates wrinkles and seams for a flawless finish. We use premium padding to extend the life of your carpet and enhance comfort. You get a fresh, clean, and cozy space without the headache of DIY.',
+    faqs: [
+      { question: 'Do you move furniture?', answer: 'Yes, we can assist with moving standard furniture items. We ask that you remove small breakables, electronics, and valuables beforehand.' },
+      { question: 'How long does installation take?', answer: 'Most residential carpet installations are completed in a single day, depending on the size of the area.' },
+      { question: 'Do you haul away the old carpet?', answer: 'Absolutely. We remove and responsibly dispose of your old flooring as part of our service.' },
+      { question: 'What padding do you use?', answer: 'We recommend and typically use premium 8lb rebond padding for the best balance of comfort and durability.' }
     ],
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200',
   },
   {
     id: 'hardwood-flooring',
-    title: 'Hardwood Flooring',
-    description: 'Timeless, durable wood floors installed with precision. Adds elegance and lasting value to any room in your home.',
-    fullDescription: `
-      Elevate your home's value and beauty with our premium hardwood flooring installation. Hardwood floors offer timeless elegance, durability, and are easy to clean and maintain.
-      
-      We specialize in both solid and engineered hardwood installation:
-      • Solid Hardwood: Classic, durable, can be refinished multiple times
-      • Engineered Hardwood: More resistant to humidity, great for Florida homes
-      
-      Our team ensures proper acclimation of wood, expert subfloor preparation, and precise installation for a floor that will last for generations.
-    `,
-    features: [
-      'Solid & engineered wood options',
-      'Expert subfloor preparation',
-      'Moisture testing & mitigation',
-      'Custom stain & finish options',
-      'Increases property value'
+    title: 'Hardwood Flooring Installation',
+    description: 'Timeless, durable wood floors installed with precision.',
+    problem: 'Damaged or scratched floors lower your home value and are hard to clean. Poorly installed hardwood can buckle, gap, or squeak, ruining the investment of expensive materials.',
+    solution: 'We expertly prepare the subfloor and acclimate the wood to Miami\'s humidity to prevent warping. Our precision installation ensures tight joints and a solid, squeak-free floor that increases your home\'s value and beauty.',
+    faqs: [
+      { question: 'Engineered vs. Solid Hardwood: Which is better for Miami?', answer: 'Engineered hardwood is generally better for Miami due to its resistance to humidity and moisture changes.' },
+      { question: 'Can you install over tile?', answer: 'In some cases, yes, but we typically recommend removing old tile to ensure proper height and adhesion.' },
+      { question: 'How do I clean my new hardwood floors?', answer: 'Use a microfiber mop and a cleaner specifically designed for hardwood. Avoid wet mopping or harsh chemicals.' }
     ],
-    image: 'https://images.unsplash.com/photo-1615876063108-670e9f7e3ee9?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1615876063108-670e9f7e3ee9?q=80&w=1200',
   },
   {
     id: 'laminate-flooring',
-    title: 'Laminate Flooring',
-    description: 'Budget-friendly floors that mimic wood or stone, easy to maintain. Great for high-traffic areas and families with pets.',
-    fullDescription: `
-      Get the look of real wood or stone at a fraction of the cost with our high-quality laminate flooring installation. Modern laminate is incredibly durable, scratch-resistant, and perfect for busy households.
-      
-      Why choose laminate?
-      • Scratch & impact resistant (great for pets!)
-      • Water-resistant options available
-      • Easy to clean and maintain
-      • huge variety of realistic wood and stone visuals
-      
-      We install top-rated laminate brands with premium underlayment for sound reduction and comfort underfoot.
-    `,
-    features: [
-      'Cost-effective alternative to wood',
-      'Highly durable & scratch resistant',
-      'Water-resistant options',
-      'Quick installation process',
-      'Realistic wood & stone visuals'
+    title: 'Laminate Flooring Installation',
+    description: 'Budget-friendly floors that mimic wood or stone, easy to maintain.',
+    problem: 'You want the look of wood or stone but have a tight budget or pets that scratch everything. Cheap laminate installation can sound hollow, peel at the edges, and fail quickly.',
+    solution: 'We install high-quality, scratch-resistant laminate with premium sound-dampening underlayment. You get the realistic look of wood or stone that stands up to pets and traffic, installed correctly to prevent peeling or separating.',
+    faqs: [
+      { question: 'Is laminate waterproof?', answer: 'Many modern laminate options are water-resistant or waterproof, making them great for kitchens and entryways.' },
+      { question: 'Does it sound hollow like plastic?', answer: 'Not with our installation. We use high-quality acoustic underlayment to make it sound and feel more like solid wood.' },
+      { question: 'How long does it last?', answer: 'Quality laminate professionally installed can last 15-25 years with proper care.' }
     ],
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200',
   },
   {
     id: 'floor-removal-prep',
-    title: 'Floor Removal & Prep',
-    description: 'Professional tear-out of old flooring, subfloor repair, and leveling. We ensure a perfect foundation for your new floors.',
-    fullDescription: `
-      A beautiful floor starts with a perfect foundation. Our floor removal and preparation services ensure your new installation goes smoothly and lasts longer.
-      
-      We handle the tough work:
-      • Removal of old carpet, tile, wood, or laminate
-      • Dust-free grinding and adhesive removal
-      • Subfloor repair and leveling
-      • Crack isolation and moisture barrier application
-      • Responsible disposal of all debris
-      
-      Don't risk your new investment on a poor subfloor. Let our experts prepare your space for perfection.
-    `,
-    features: [
-      'Dust-contained removal',
-      'Subfloor leveling & repair',
-      'Adhesive & thinset removal',
-      'Moisture testing',
-      'Debris haul-away included'
+    title: 'Floor Removal & Preparation',
+    description: 'Professional tear-out of old flooring, subfloor repair, and leveling.',
+    problem: 'Removing old tile or glued-down flooring is back-breaking, dusty work. If the subfloor isn\'t perfectly clean and level afterwards, your new floor will fail, crack, or squeak.',
+    solution: 'We use industrial-grade equipment to remove old flooring quickly and minimize dust. We then grind, patch, and level the subfloor to create the perfect foundation, ensuring your new floor installation is flawless.',
+    faqs: [
+      { question: 'Is the process dusty?', answer: 'We use dust-containment strategies and industrial vacuums, but some dust is inevitable. We recommend covering sensitive items.' },
+      { question: 'Can you level a concrete slab?', answer: 'Yes, we use self-leveling compound to fix dips and uneven spots in concrete subfloors.' },
+      { question: 'Do you dispose of the debris?', answer: 'Yes, we haul away all old flooring material and debris.' }
     ],
-    image: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=1200',
   },
   {
     id: 'stair-carpet-runners',
     title: 'Stair Carpet & Runners',
-    description: 'Custom stair carpeting to add safety and style. Beautiful runners that protect stairs while enhancing your home look.',
-    fullDescription: `
-      Add safety, style, and comfort to your staircase with our custom carpet installation. Stairs are a high-traffic area and often the focal point of your home's entryway.
-      
-      We offer:
-      • Full Stair Carpeting: Complete coverage for maximum comfort and safety
-      • Custom Runners: Show off your wood stairs while adding a carpet path
-      • Hollywood or Waterfall installation styles
-      • Binding and surging for custom runners
-      
-      Proper stair installation requires expert skill to ensure safety and longevity. Trust our experienced team to handle your complex stair projects.
-    `,
-    features: [
-      'Custom runners & full coverage',
-      'Hollywood & Waterfall styles',
-      'Enhanced safety & slip resistance',
-      'Noise reduction on stairs',
-      'Professional binding & surging'
+    description: 'Custom stair carpeting to add safety and style.',
+    problem: 'Wood stairs can be slippery and dangerous, especially for kids, seniors, and pets. They are also noisy. Poorly installed runners can come loose and become a trip hazard themselves.',
+    solution: 'Our custom-fitted stair carpets and runners provide essential traction and sound dampening. We securely fasten every piece using professional tack strips and staples so it never shifts, combining safety with elegant style.',
+    faqs: [
+      { question: 'What is a waterfall installation?', answer: 'Waterfall style flows over the nose of the tread and down the riser without being tucked under the nose. It\'s a modern, clean look.' },
+      { question: 'Can you bind the edges?', answer: 'Yes, we provide professional binding or surging for custom runners to prevent fraying.' },
+      { question: 'Is it safe for pets?', answer: 'Yes, carpeted stairs provide much-needed grip for pets to go up and down safely.' }
     ],
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200',
   },
   {
     id: 'commercial-flooring',
-    title: 'Commercial Flooring',
-    description: 'Durable solutions for offices, retail spaces, and businesses. Fast installation with minimal disruption to your operations.',
-    fullDescription: `
-      We provide professional commercial flooring solutions for businesses across Miami. From offices and retail stores to hotels and restaurants, we have the right flooring for your commercial space.
-      
-      Our commercial services include:
-      • Commercial Carpet Tiles (modular & easy to replace)
-      • Broadloom Carpet for hotels & offices
-      • Luxury Vinyl Tile (LVT) and Plank (LVP)
-      • VCT (Vinyl Composition Tile)
-      
-      We understand your business needs to keep running. We offer flexible scheduling, including nights and weekends, to minimize disruption to your operations.
-    `,
-    features: [
-      'Heavy-duty commercial grade materials',
-      'Carpet tiles, LVT, VCT & more',
-      'Night & weekend installation available',
-      'Project management included',
-      'Licensed & Insured for commercial work'
+    title: 'Commercial Flooring Services',
+    description: 'Durable solutions for offices, retail spaces, and businesses.',
+    problem: 'Worn-out flooring makes your business look unprofessional and can be a liability. Closing down for days to replace it costs you money and disrupts your operations.',
+    solution: 'We offer flexible scheduling, including nights and weekends, to install durable commercial flooring without interrupting your business. Our heavy-duty materials withstand high traffic and look professional for years.',
+    faqs: [
+      { question: 'Do you work weekends?', answer: 'Yes, we offer after-hours and weekend installation to minimize business disruption.' },
+      { question: 'What is best for high traffic?', answer: 'Carpet tiles or Luxury Vinyl Plank (LVP) are excellent choices for durability and ease of maintenance.' },
+      { question: 'Are you insured for commercial work?', answer: 'Yes, we carry full liability and workers\' compensation insurance required for commercial buildings.' }
     ],
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200',
   },
 ]
-
