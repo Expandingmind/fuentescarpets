@@ -24,7 +24,7 @@ export const services = [
       { question: 'Can you install over tile?', answer: 'In some cases, yes, but we typically recommend removing old tile to ensure proper height and adhesion.' },
       { question: 'How do I clean my new hardwood floors?', answer: 'Use a microfiber mop and a cleaner specifically designed for hardwood. Avoid wet mopping or harsh chemicals.' }
     ],
-    image: 'https://images.unsplash.com/photo-1615876063108-670e9f7e3ee9?q=80&w=1200',
+    image: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200',
   },
   {
     id: 'laminate-flooring',
