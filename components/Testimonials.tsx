@@ -75,7 +75,7 @@ export default function Testimonials() {
           {/* Left Column: Summary Badge */}
           <div className="flex-shrink-0 text-center lg:text-left lg:w-1/4">
             <div className="inline-block">
-              <div className="text-5xl font-black text-gray-900 mb-2">5.0</div>
+              <div className="text-5xl font-black text-gray-900 mb-2">4.8</div>
               <div className="flex justify-center lg:justify-start gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20">
