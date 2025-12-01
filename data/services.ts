@@ -11,7 +11,7 @@ export const services = [
       { question: 'Do you haul away the old carpet?', answer: 'Absolutely. We remove and responsibly dispose of your old flooring as part of our service.' },
       { question: 'What padding do you use?', answer: 'We recommend and typically use premium 8lb rebond padding for the best balance of comfort and durability.' }
     ],
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200',
+    image: '/images/carpet-3.png',
   },
   {
     id: 'hardwood-flooring',
@@ -24,7 +24,7 @@ export const services = [
       { question: 'Can you install over tile?', answer: 'In some cases, yes, but we typically recommend removing old tile to ensure proper height and adhesion.' },
       { question: 'How do I clean my new hardwood floors?', answer: 'Use a microfiber mop and a cleaner specifically designed for hardwood. Avoid wet mopping or harsh chemicals.' }
     ],
-    image: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=1200',
+    image: '/images/carpet.png',
   },
   {
     id: 'laminate-flooring',
@@ -37,7 +37,7 @@ export const services = [
       { question: 'Does it sound hollow like plastic?', answer: 'Not with our installation. We use high-quality acoustic underlayment to make it sound and feel more like solid wood.' },
       { question: 'How long does it last?', answer: 'Quality laminate professionally installed can last 15-25 years with proper care.' }
     ],
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200',
+    image: '/images/carpet-5.png',
   },
   {
     id: 'floor-removal-prep',
@@ -50,7 +50,7 @@ export const services = [
       { question: 'Can you level a concrete slab?', answer: 'Yes, we use self-leveling compound to fix dips and uneven spots in concrete subfloors.' },
       { question: 'Do you dispose of the debris?', answer: 'Yes, we haul away all old flooring material and debris.' }
     ],
-    image: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=1200',
+    image: '/images/carpet-4.png',
   },
   {
     id: 'stair-carpet-runners',
@@ -63,7 +63,7 @@ export const services = [
       { question: 'Can you bind the edges?', answer: 'Yes, we provide professional binding or surging for custom runners to prevent fraying.' },
       { question: 'Is it safe for pets?', answer: 'Yes, carpeted stairs provide much-needed grip for pets to go up and down safely.' }
     ],
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200',
+    image: '/images/carpet-2.png',
   },
   {
     id: 'commercial-flooring',
@@ -76,6 +76,6 @@ export const services = [
       { question: 'What is best for high traffic?', answer: 'Carpet tiles or Luxury Vinyl Plank (LVP) are excellent choices for durability and ease of maintenance.' },
       { question: 'Are you insured for commercial work?', answer: 'Yes, we carry full liability and workers\' compensation insurance required for commercial buildings.' }
     ],
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200',
+    image: '/images/carpetinstall.png',
   },
 ]

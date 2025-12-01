@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=2400" alt="Modern wooden staircase flooring" className="w-full h-full object-cover" />
+        <img src="/images/carpet-6.png" alt="Modern wooden staircase flooring" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
       </div>
 
