@@ -14,22 +14,23 @@ export default function Footer() {
     { label: 'Services', id: 'services' },
     { label: 'Contact Us', id: 'contact' },
     { label: 'Reviews', id: 'testimonials' },
+    // { label: 'Gallery', id: 'gallery' }, // Commented out as per user instruction to focus on core sections
   ]
 
   return (
-    <footer className="bg-black text-white pt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <footer className="bg-black text-white pt-12 md:pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           
           {/* Col 1: Brand & Intro */}
           <div>
-            <div className="mb-6">
-              <h2 className="text-3xl font-black tracking-tighter text-white uppercase leading-none">
+            <div className="mb-4 md:mb-6">
+              <h2 className="text-2xl md:text-3xl font-black tracking-tighter text-white uppercase leading-none">
                 Fuentes
-                <span className="block text-lg font-bold text-gray-400 tracking-normal">Carpet Installation</span>
+                <span className="block text-sm md:text-lg font-bold text-gray-400 tracking-normal">Carpet Installation</span>
               </h2>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-8">
+            <p className="text-gray-400 text-sm leading-relaxed mb-6 md:mb-8">
               Fuentes Carpet Installation is a dedicated team of flooring professionals 
               providing premium installation services throughout Miami Dade and Broward County.
             </p>
@@ -52,7 +53,7 @@ export default function Footer() {
 
           {/* Col 2: Working Hours */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Working Hours</h3>
+            <h3 className="text-lg font-bold mb-4 md:mb-6">Working Hours</h3>
             <div className="space-y-2">
               <p className="text-gray-400">Monday - Sunday</p>
               <p className="text-white font-semibold">08:00 am - 08:00 pm</p>
@@ -61,7 +62,7 @@ export default function Footer() {
 
           {/* Col 3: Navigation */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Navigation</h3>
+            <h3 className="text-lg font-bold mb-4 md:mb-6">Navigation</h3>
             <ul className="space-y-3">
               {navigation.map((link) => (
                 <li key={link.id} className="flex items-center text-gray-400 hover:text-white transition-colors cursor-pointer" onClick={() => scrollToSection(link.id)}>
@@ -74,7 +75,7 @@ export default function Footer() {
 
           {/* Col 4: Contact Us */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Contact Us</h3>
+            <h3 className="text-lg font-bold mb-4 md:mb-6">Contact Us</h3>
             <div className="space-y-6">
               <div>
                 <h4 className="font-bold text-white text-sm mb-1">Address:</h4>
@@ -100,8 +101,8 @@ export default function Footer() {
       </div>
 
       {/* Copyright Bar */}
-      <div className="bg-primary py-6 text-center">
-        <p className="text-white/90 text-sm font-medium">
+      <div className="bg-primary py-4 md:py-6 text-center">
+        <p className="text-white/90 text-xs md:text-sm font-medium">
           Copyright © 2025 Fuentes Carpet Installation Corp. All rights reserved.
         </p>
       </div>
