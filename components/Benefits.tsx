@@ -20,7 +20,7 @@ export default function Benefits() {
             <FadeIn direction="right" delay={200} className="h-full">
               <div className="absolute inset-0 bg-gray-100 rounded-[1rem] md:rounded-[2rem] transform -rotate-3"></div>
               <img 
-                src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=1200" 
+                src="/images/IMG_3798.jpg" 
                 alt="Premium carpet installation result" 
                 className="relative w-full h-full object-cover rounded-[1rem] md:rounded-[2rem] shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500"
               />

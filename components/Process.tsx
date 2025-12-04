@@ -122,7 +122,7 @@ export default function Process() {
               <div className="absolute inset-0 bg-gray-100 rounded-[0.75rem] md:rounded-[1.5rem] transform rotate-3"></div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
-                src="/images/carpetinstall.png" 
+                src="/images/IMG_3788.jpg" 
                 alt="Professional flooring installation process" 
                 className="relative w-full h-full object-cover rounded-[0.75rem] md:rounded-[1.5rem] shadow-2xl bg-gray-200"
               />
