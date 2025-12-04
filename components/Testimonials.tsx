@@ -61,37 +61,37 @@ export default function Testimonials() {
   }
 
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-white overflow-hidden">
+    <section id="testimonials" className="py-10 md:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <FadeIn direction="up">
-          <div className="text-center mb-12 md:mb-16">
-            <p className="text-xs md:text-sm font-bold text-gray-500 uppercase tracking-wider mb-2">— Our Features</p>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900">
+          <div className="text-center mb-8 md:mb-16">
+            <p className="text-[10px] md:text-sm font-bold text-gray-500 uppercase tracking-wider mb-1 md:mb-2">— Our Features</p>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900">
               What Our Clients Are Saying
             </h2>
           </div>
         </FadeIn>
 
-        <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-12 items-center">
           
           {/* Left Column: Summary Badge */}
           <div className="flex-shrink-0 text-center lg:text-left lg:w-1/4">
             <FadeIn direction="right">
               <div className="inline-block">
-                <div className="text-4xl md:text-5xl font-black text-gray-900 mb-2">4.8</div>
-                <div className="flex justify-center lg:justify-start gap-1 mb-2">
+                <div className="text-4xl md:text-5xl font-black text-gray-900 mb-1 md:mb-2">4.8</div>
+                <div className="flex justify-center lg:justify-start gap-1 mb-1 md:mb-2">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-5 md:w-6 h-5 md:h-6 text-yellow-400 fill-current" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
                 </div>
-                <p className="text-gray-600 font-medium underline mb-4 cursor-pointer hover:text-gray-900 text-sm md:text-base">
+                <p className="text-gray-600 font-medium underline mb-2 md:mb-4 cursor-pointer hover:text-gray-900 text-xs md:text-base">
                   Based on 126+ reviews.
                 </p>
                 <div className="flex items-center justify-center lg:justify-start gap-2">
-                  <span className="text-blue-500 font-bold text-2xl md:text-3xl font-sans">Google</span>
+                  <span className="text-blue-500 font-bold text-xl md:text-3xl font-sans">Google</span>
                 </div>
               </div>
             </FadeIn>
@@ -106,7 +106,7 @@ export default function Testimonials() {
               className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-4 z-10 w-8 h-8 md:w-10 md:h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-primary hover:scale-110 transition-all border border-gray-100"
               aria-label="Previous review"
             >
-              <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
@@ -116,7 +116,7 @@ export default function Testimonials() {
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-4 z-10 w-8 h-8 md:w-10 md:h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-primary hover:scale-110 transition-all border border-gray-100"
               aria-label="Next review"
             >
-              <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -127,8 +127,8 @@ export default function Testimonials() {
                 <FadeIn key={index} delay={index * 150} direction="up" className="h-full">
                   <div className="bg-white border border-gray-100 rounded-xl p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
                     {/* Header: Avatar + Name + G Icon */}
-                    <div className="flex justify-between items-start mb-4">
-                      <div className="flex items-center gap-3">
+                    <div className="flex justify-between items-start mb-3 md:mb-4">
+                      <div className="flex items-center gap-2 md:gap-3">
                         <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 font-bold text-xs md:text-sm">
                           {review.name.charAt(0)}
                         </div>
@@ -146,7 +146,7 @@ export default function Testimonials() {
                     </div>
 
                     {/* Stars */}
-                    <div className="flex gap-1 mb-3">
+                    <div className="flex gap-1 mb-2 md:mb-3">
                       {[...Array(review.rating)].map((_, i) => (
                         <svg key={i} className="w-3 h-3 md:w-4 md:h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
