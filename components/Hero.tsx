@@ -14,9 +14,26 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <img src="/images/carpet-6.png" alt="Modern wooden staircase flooring" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
+      {/* Split Background Images */}
+      <div className="absolute inset-0 z-0 flex">
+        {/* Left Image */}
+        <div className="w-1/2 h-full relative">
+          <img 
+            src="/images/IMG_3791.jpg" 
+            alt="Professional carpet stair installation" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* Right Image */}
+        <div className="w-1/2 h-full relative">
+          <img 
+            src="/images/IMG_3789.jpg" 
+            alt="Premium hardwood staircase" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/50"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 text-center md:text-left">
