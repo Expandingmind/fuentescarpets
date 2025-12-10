@@ -27,7 +27,7 @@ export default function Hero() {
         {/* Right Image */}
         <div className="w-1/2 h-full relative">
           <img 
-            src="/images/IMG_3789.jpg" 
+            src="/images/stairs.PNG" 
             alt="Premium hardwood staircase" 
             className="w-full h-full object-cover"
           />
